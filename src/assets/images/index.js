@@ -1,0 +1,1 @@
+export { default as fox_img } from './fox.jpg';

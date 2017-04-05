@@ -1,0 +1,13 @@
+$counter-btn-border : $silver;
+$counter-btn-bg     : $white;
+
+.counter-btn {
+    background: $white;
+    border: 1px solid $counter-btn-border;
+    cursor: pointer;
+    margin: 5px;
+    line-height: 1em;
+    font-size: 1em;
+    width: 40px;
+    height: 40px;
+}

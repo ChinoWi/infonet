@@ -1,0 +1,61 @@
+$header-nav-item : $curious-blue;
+$header-border   : $silver;
+$header-bg       : $whitesmoke;
+
+#headers{
+    border-bottom: 1px solid rgba(36,50,56,0.2);
+}
+#headers .header{
+    background: #fff;
+    padding-top: 10px;
+    position: relative;
+}
+#headers .header .top-bar{
+    background: #fff;
+}
+.header .logo {
+    padding: 8px;
+    width: 70px;
+    overflow: hidden;
+}
+
+
+#headers .rowd {
+
+}
+#headers .rowd .menu-navv{
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background: #243238;
+    li {
+        display: inline-block;
+        float: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+    a{
+        color:white;
+        padding: 14px 10px 11px 10px;
+        font-size: 17px;
+    }
+    a:hover {
+        background: white;
+        color: #243238;
+        border-bottom: 3px solid #32BAEB;
+    }
+    .active {
+        background: white;
+        color: #243238;
+        border-bottom: 3px solid #32BAEB;
+    }
+
+}
+
+#headers .rowdd{
+    padding-bottom: 10px;
+}
+#headers .rowdd li{
+
+}
