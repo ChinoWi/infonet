@@ -1,6 +1,6 @@
-# Webpack 2 - Starter Files
+# Webpack 2 - Starter React Js - Foundation - Semantic-UI-React - Frontend
 
-Learn how to setup Webpack 2 from scratch, by following the complete playlist on YouTube.
+Este es un projecto de Infonet Soluciones
 
 ## Webpack 2 Playlist
 [Watch on YouTube](https://www.youtube.com/watch?v=JdGnYNtuEtE&list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY)
@@ -15,9 +15,10 @@ Learn how to setup Webpack 2 from scratch, by following the complete playlist on
 
 ## How to use the files?
 
-1. Clone this repo
-2. Run `npm install` to install all the dependencies
-3. Run `npm run dev`
-4. New browser window should open with a green text on pink background.
+1. Clone el Repositorio de Infonet
+2. Ejecute `yarn ` para instalar las dependencias
+3. Ejecute `yarn run dev` para Development, Localhost
+4. Ejecute `yarn run prod` para generar los archivos en la carpeta disdProd
+4. Funciona para Windows - Linux.
 
-Don't forget to [subscribe to my channel](https://www.youtube.com/channel/UC7O6CntQoAI-wYyJxYiqNUg?sub_confirmation=1) for more front-end videos.
+Infonet Soluciones Project Practicas Pre - Profesionales.
