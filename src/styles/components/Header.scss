@@ -5,20 +5,13 @@ $header-bg       : $whitesmoke;
 #headers{
     border-bottom: 1px solid rgba(36,50,56,0.2);
 }
-#headers .header{
-    background: #fff;
-    padding-top: 10px;
-    position: relative;
-}
-#headers .header .top-bar{
+#headers .top-bar{
     background: #fff;
 }
-.header .logo {
-    padding: 8px;
-    width: 70px;
+#headers .logo {
+    width: 60px;
     overflow: hidden;
 }
-
 
 #headers .rowd {
 
@@ -41,8 +34,8 @@ $header-bg       : $whitesmoke;
         font-size: 17px;
     }
     a:hover {
-        background: white;
-        color: #243238;
+        background: #737C80;
+        color: #FFFDF7;
         border-bottom: 3px solid #32BAEB;
     }
     .active {

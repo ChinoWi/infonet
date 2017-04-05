@@ -3,7 +3,7 @@ import {NavLink,Link} from 'react-router-dom'
 
 import { react_icon } from '../../assets/icons';
 
-import { Button, Icon } from 'semantic-ui-react'
+import { Button, Icon, Header,Menu } from 'semantic-ui-react'
 import $ from 'jquery'
 
 const borderStyle={
@@ -115,31 +115,44 @@ const Headers=React.createClass({
         return(
             <div>
                 <header id="headers">
-                    <div className="row header">
+                    <div className="row">
                         <div className="top-bar">
                             <div className="large-4 medium-3 columns text-left" >
                                 <Link to="/" ><img src={react_icon} className="logo" /></Link>
                             </div>
                             <div className="large-8 medium-9 columns text-center" >
-                                <div className="large-6 medium-6 columns">
-                                   <h1>Aqui Signo Info</h1>
-                                </div>
                                 <div className="large-6 medium-6 columns" >
-                                    <Button href="https://www.facebook.com/infonetsolucionesperu" color='facebook' size="tiny">   {/* Button e Icon -> Semantic UI React */}
-                                        <Icon name='facebook' /> Facebook
-                                    </Button>
-                                    <Button color='twitter' size="tiny">
-                                        <Icon name='twitter' /> Twitter
-                                    </Button>
-                                    <Button color='google plus' size="tiny">
-                                        <Icon name='google plus' /> Google Plus
-                                    </Button>
-                                    <Button color='linkedin' size="tiny">
-                                        <Icon name='linkedin' /> LinkedIn
-                                    </Button>
-                                    <Button color='youtube' size="tiny">
-                                        <Icon name='youtube' /> YouTube
-                                    </Button>
+                                    <div className="columns text-center">
+                                        <Button animated='fade'>
+                                            <Button.Content visible>
+                                                <Icon name="student"></Icon>Ingreso a Plataforma
+                                            </Button.Content>
+                                            <Button.Content hidden>
+                                                Click aqui
+                                            </Button.Content>
+                                        </Button>
+                                    </div>
+                                    <div className="columns">
+                                        fsadf
+                                    </div>
+                                    <div className="columns">
+                                        fsadfsas
+                                    </div>
+
+                                    <div className="large-4 columns">
+
+                                    </div>
+                                    <div className="large-4 columns">
+                                        <h2>Aqui Signo Info</h2>
+                                    </div>
+
+
+                                </div>
+                                <div className="large-6 medium-6 columns" style={borderStyle}>
+                                    <Button circular color='facebook' icon='facebook' />
+                                    <Button circular color='twitter' icon='twitter' />
+                                    <Button circular color='linkedin' icon='linkedin' />
+                                    <Button circular color='google plus' icon='google plus' />
                                 </div>
                             </div>
                         </div>
