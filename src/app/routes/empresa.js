@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Nosotros=React.createClass({
+const Empresa=React.createClass({
     render(){
         return(
             <div>
-                <h2>Esto es View Nosotros</h2>
+                <h2>Esto es View Empresa</h2>
             </div>
         )
     }
 })
 
-export default Nosotros
+export default Empresa

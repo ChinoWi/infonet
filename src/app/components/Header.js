@@ -151,13 +151,16 @@ const Headers=React.createClass({
                                     <Link to='/' onMouseEnter={this.onMouseEnterHandlerInicio}>INICIO</Link>
                                 </li>
                                 <li>
-                                    <Link to='/servicios' onMouseEnter={this.onMouseEnterHandlerServices}>SERVICIOS</Link>
+                                    <Link to='/empresa' onMouseEnter={this.onMouseEnterHandlerServices}>EMPRESA</Link>
                                 </li>
                                 <li>
-                                    <Link to='/nosotros' onMouseEnter={this.onMouseEnterHandlerNosotros}>NOSOTROS</Link>
+                                    <Link to='/servicios' onMouseEnter={this.onMouseEnterHandlerNosotros}>SERVICIOS</Link>
                                 </li>
                                 <li>
-                                    <Link to='/contact' onMouseEnter={this.onMouseEnterHandlerContacto}>CONTACTANOS</Link>
+                                    <Link to='/clientes' onMouseEnter={this.onMouseEnterHandlerContacto}>CLIENTES</Link>
+                                </li>
+                                <li>
+                                    <Link to='/contacto' onMouseEnter={this.onMouseEnterHandlerContacto}>CONTACTO</Link>
                                 </li>
                             </ul>
                         </div>

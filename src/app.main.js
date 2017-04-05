@@ -7,8 +7,9 @@ import NoScript from 'react-noscript';
 import Header from './app/components/Header'
 
 import Home from './app/routes/home'
+import Empresa from './app/routes/empresa'
+import Clientes from './app/routes/clientes'
 import Services from './app/routes/services'
-import Nosotros from './app/routes/nosotros'
 import Contact from './app/routes/contact'
 import $ from 'jquery'
 
@@ -28,9 +29,10 @@ ReactDOM.render(
            <div>
                <Switch>
                    <Route exact path="/" component={Home}></Route>
+                   <Route path="/empresa" component={Empresa}></Route>
+                   <Route path="/clientes" component={Clientes}></Route>
                    <Route path="/servicios" component={Services}></Route>
-                   <Route path="/nosotros" component={Nosotros}></Route>
-                   <Route path="/contact" component={Contact}></Route>
+                   <Route path="/contacto" component={Contact}></Route>
                    <Route component={Error404}></Route>
                </Switch>
 
