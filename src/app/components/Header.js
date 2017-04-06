@@ -11,6 +11,7 @@ const borderStyle={
 }
 
 const MenuSubMenu=React.createClass({
+
     getInitialState(){
         return{
             show1: true,
@@ -120,97 +121,33 @@ const MenuSubMenu=React.createClass({
 })
 
 
-const Prueba=React.createClass({
 
-    getInitialState(){
-        return{
+class Headers extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
             activeItem: 'closest'
         };
-    },
+    }
+
     componentDidMount(){
         $(document).ready(function(){
-            $('#headers ul li a').click(function(){
+            $('#head ul li a').click(function(){
                 $('li a').removeClass("active");
                 $(this).addClass("active");
             });
         });
-    },
-
-
-
-    handleItemClick(e,{name}){
-        this.setState({
-            activeItem: name
-        })
-    },
-
-
-    render(){
-        const { activeItem } = this.state
-        return(
-            <div>
-                <header id="headers">
-                    <div className="row">
-                        <div className="top-bar">
-                            <div className="large-4 medium-3 columns text-left" >
-                                <Link to="/" ><img src={react_icon} className="logo" /></Link>
-                            </div>
-                            <div className="large-8 medium-9 columns text-center" >
-                                <div className="columns text-right">
-                                    <div className="large-8 medium-8 columns" >
-                                        <Button animated='fade' >
-                                            <Button.Content visible >
-                                                <Icon name="student"></Icon>Ingreso a Plataforma
-                                            </Button.Content>
-                                            <Button.Content hidden href="/moodle/">
-                                                Click aqui
-                                            </Button.Content>
-                                        </Button>
-                                    </div>
-                                    <div className="large-4 medium-4 columns" style={{border:'1px solid green'}}>
-                                        <Button color='facebook' icon='facebook' />
-                                        <Button color='twitter' icon='twitter' />
-                                        <Button color='linkedin' icon='linkedin' />
-                                        <Button color='google plus' icon='google plus' />
-                                    </div>
-
-                                </div>
-                                <div className="columns text-right" style={{border:'1px solid blue'}}>
-                                    <div className="row" style={{paddingLeft:'150px',border:'1px solid red'}}>
-                                        sdfsd
-                                        <Menu text>
-                                            <Menu.Item href="#terminosycondiciones" name='Termino y Condiciones' active={activeItem === 'Termino y Condiciones'} onClick={this.handleItemClick}/>
-                                            <Menu.Item name='mostComments'  active={activeItem === 'mostComments'} onClick={this.handleItemClick}/>
-                                            <Menu.Item name='mostPopular'  active={activeItem === 'mostPopular'} onClick={this.handleItemClick}/>
-                                        </Menu>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    asdfsad
-
-                </header>
-            </div>
-        )
     }
-})
-
-const Headers=React.createClass({
-    getInitialState(){
-        return{
-            activeItem: 'closest'
-        };
-    },
 
     handleItemClick(e,{name}){
         this.setState({
             activeItem: name
         })
-    },
+    }
+
     render(){
         const { activeItem } = this.state
+
         return(
             <div id="head">
                 <div className="row" style={{}}>
@@ -250,15 +187,15 @@ const Headers=React.createClass({
                             <div className="columns">
                                 <div className="itemMenu text-right" >
                                     <ul>
-                                        <li><a href="#" >Terminos y Condiciones</a></li>
-                                        <li><a href="#">Prueba</a></li>
+                                        <li><Link to="terminosycondiciones" >Terminos y Condiciones</Link></li>
+                                        <li><a href="#" >Prueba</a></li>
                                         <li><a href="#">Security</a></li>
                                         <li><a href="#">Security</a></li>
                                     </ul>
                                 </div>
                             </div>
-
                     </div>
+
                 </div>
                 <MenuSubMenu/>
             </div>
@@ -267,7 +204,7 @@ const Headers=React.createClass({
 
         )
     }
-})
+}
 
 
 export default Headers
