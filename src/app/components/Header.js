@@ -3,7 +3,7 @@ import {NavLink,Link} from 'react-router-dom'
 
 import { react_icon } from '../../assets/icons';
 
-import { Button, Icon, Header,Menu,Grid,Modal,Popup } from 'semantic-ui-react'
+import { Button, Icon, Header,Menu,Grid,Image } from 'semantic-ui-react'
 import $ from 'jquery'
 
 const borderStyle={
@@ -24,7 +24,9 @@ const MenuSubMenu=React.createClass({
     getOptionInicio(){
         return(
             <div>
-                <div className="large-3 medium-3 columns">Inicio</div>
+                <div className="large-3 medium-3 columns" style={borderStyle}>
+                    <Image></Image>
+                </div>
                 <div className="large-3 medium-3 columns">Inicio</div>
                 <div className="large-3 medium-3 columns">Inicio</div>
                 <div className="large-3 medium-3 columns">Inicio</div>

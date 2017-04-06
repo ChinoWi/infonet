@@ -1,7 +1,26 @@
-#Home {
-
-    .logo {
-        width: 100px;
-    }
+#home {
 
 }
+
+#home .home-one{
+    padding: 10px;
+    background: #F5F5F5;;
+
+}
+#home .home-one .one-p{
+    margin:auto;
+    padding: 20px;
+
+}
+
+#home .home-one .react-swipeable-view-container{
+    border: 1px solid green;
+
+}
+
+
+//Section 2
+#home .home-two{
+    background: #F5F5F5;
+}
+
