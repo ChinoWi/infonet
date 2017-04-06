@@ -2,25 +2,64 @@ $header-nav-item : $curious-blue;
 $header-border   : $silver;
 $header-bg       : $whitesmoke;
 
-#headers{
-    border-bottom: 1px solid rgba(36,50,56,0.2);
+#head{
+    border: 1px solid goldenrod;
 }
-#headers .top-bar{
-    background: #fff;
-}
-#headers .logo {
+
+#head .head-logo{
     width: 60px;
-    overflow: hidden;
+}
+#head .logo-text{
+    padding-top: 15px;
 }
 
-#headers .rowd {
+#head .ui.text.menu {
+    margin: 0;
+}
+#head .ui.text.menu a{
+
+    text-align: center;
+}
+
+
+
+
+#head .itemMenu li {
+    display: inline-block;
+    float: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
-#headers .rowd .menu-navv{
+#head .itemMenu li a{
+    padding: 0px 10px 0px 10px;
+    color: rgba(0,0,0,.6);
+    -webkit-transition: opacity .1s ease;
+    transition: opacity .1s ease;
+}
+
+#head .itemMenu li a:hover{
+    color: rgba(0,0,0,.95);
+
+}
+
+
+#head .icon-social{
+    padding-top: 5px;
+}
+
+
+
+//Menu
+
+#head .rowd {
+}
+#head .rowd .menu-navv{
     bottom: 0;
     text-align: center;
     width: 100%;
     background: #243238;
+    border-bottom: 5px solid rgb(76, 193, 190);
     li {
         display: inline-block;
         float: none;
@@ -30,13 +69,13 @@ $header-bg       : $whitesmoke;
     }
     a{
         color:white;
-        padding: 14px 10px 11px 10px;
+        padding: 11px 10px 14px 10px;
         font-size: 17px;
     }
     a:hover {
         background: #737C80;
         color: #FFFDF7;
-        border-bottom: 3px solid #32BAEB;
+        border-top: 3px solid #32BAEB;
     }
     .active {
         background: white;
@@ -46,9 +85,10 @@ $header-bg       : $whitesmoke;
 
 }
 
-#headers .rowdd{
+#head .rowdd{
+    padding-top: 10px;
     padding-bottom: 10px;
 }
-#headers .rowdd li{
+#head .rowdd li{
 
 }
