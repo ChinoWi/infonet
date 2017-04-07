@@ -23,7 +23,7 @@ const Error404=React.createClass({
 })
 
 ReactDOM.render(
-   <HashRouter hashType="noslash">
+   <HashRouter>
        <div>
            <Header/>
            <div>

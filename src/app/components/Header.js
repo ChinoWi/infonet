@@ -3,6 +3,7 @@ import {NavLink,Link} from 'react-router-dom'
 
 import { react_icon } from '../../assets/icons';
 
+
 import { Button, Icon, Header,Menu,Grid,Image } from 'semantic-ui-react'
 import $ from 'jquery'
 
@@ -18,71 +19,96 @@ const MenuSubMenu=React.createClass({
             show2:false,
             show3:false,
             show4:false,
+            show5:false
         };
     },
 
     getOptionInicio(){
         return(
-            <div>
-                <div className="large-3 medium-3 columns" style={borderStyle}>
-                    <Image></Image>
-                </div>
-                <div className="large-3 medium-3 columns">Inicio</div>
-                <div className="large-3 medium-3 columns">Inicio</div>
-                <div className="large-3 medium-3 columns">Inicio</div>
+            <div className="large-up-4 medium-up-4">
+                <div className="columns" style={borderStyle}>asa</div>
+                <div className="columns">Inicio</div>
+                <div className="columns">Inicio</div>
+                <div className="columns">Inicio</div>
+            </div>
+        )
+    },
+    getOptionEmpresa(){
+        return(
+            <div className="large-up-4 medium-up-4">
+                <div className="columns" style={borderStyle}>Empresa</div>
+                <div className="columns">Empresa</div>
+                <div className="columns">Empresa</div>
+                <div className="columns">Empresa</div>
             </div>
         )
     },
     getOptionServicios(){
         return(
-            <div>
-                <div className="large-2 medium-2 columns">servicios</div>
-                <div className="large-2 medium-2 columns">servicios</div>
-                <div className="large-2 medium-2 columns">servicios</div>
-                <div className="large-2 medium-2 columns">servicios</div>
-                <div className="large-2 medium-2 columns">servicios</div>
-                <div className="large-2 medium-2 columns">servicios</div>
+            <div className="large-up-4 medium-up-4">
+                <div className="columns" style={borderStyle}>Servicios</div>
+                <div className="columns">Servicios</div>
+                <div className="columns">Servicios</div>
+                <div className="columns">Servicios</div>
             </div>
         )
     },
-    getOptionNosotros(){
+    getOptionClientes(){
         return(
-            <div>
-                <div className="large-3 medium-3 columns">Nosotros</div>
-                <div className="large-3 medium-3 columns">Nosotros</div>
-                <div className="large-3 medium-3 columns">Nosotros</div>
-                <div className="large-3 medium-3 columns">Nosotros</div>
+            <div className="large-up-4 medium-up-4">
+                <div className="columns text-center" style={borderStyle}>
+                    Clientes
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Clientes</Link>
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Clientes</Link>
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Clientes</Link>
+                </div>
             </div>
         )
     },
     getOptionContacto(){
         return(
-            <div>
-                <div className="large-2 medium-2 columns">Contacto</div>
-                <div className="large-2 medium-2 columns">Contacto</div>
-                <div className="large-2 medium-2 columns">Contacto</div>
-                <div className="large-2 medium-2 columns">Contacto</div>
-                <div className="large-2 medium-2 columns">Contacto</div>
-                <div className="large-2 medium-2 columns">Contacto</div>
+            <div className="large-up-4 medium-up-4">
+                <div className="columns text-center" style={borderStyle}>
+                    Contacto
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Contacto</Link>
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Contacto</Link>
+                </div>
+                <div className="columns">
+                    <Link to="/contact/formulario">Contacto</Link>
+                </div>
             </div>
         )
     },
 
     onMouseEnterHandlerInicio: function(e){
         e.preventDefault();
-        this.setState({show1: true,show2:false, show3:false,show4:false});
+        this.setState({show1: true,show2:false, show3:false,show4:false,show5:false});
     },
-    onMouseEnterHandlerServices: function(e){
+    onMouseEnterHandlerEmpresa: function(e){
         e.preventDefault();
-        this.setState({show1: false,show2:true,show3:false,show4:false});
+        this.setState({show1: false,show2:true,show3:false,show4:false,show5:false});
     },
-    onMouseEnterHandlerNosotros: function(e){
+    onMouseEnterHandlerServicios: function(e){
         e.preventDefault();
-        this.setState({show1:false, show2:false,show3:true,show4:false});
+        this.setState({show1:false, show2:false,show3:true,show4:false,show5:false});
+    },
+    onMouseEnterHandlerClientes: function(e){
+        e.preventDefault();
+        this.setState({show1:false,show2:false,show3:false,show4:true,show5:false});
     },
     onMouseEnterHandlerContacto: function(e){
         e.preventDefault();
-        this.setState({show1:false,show2:false,show3:false,show4:true});
+        this.setState({show1:false,show2:false,show3:false,show4:false,show5:true});
     },
 
     render(){
@@ -95,13 +121,13 @@ const MenuSubMenu=React.createClass({
                                 <Link to='/' onMouseEnter={this.onMouseEnterHandlerInicio}>INICIO</Link>
                             </li>
                             <li>
-                                <Link to='/empresa' onMouseEnter={this.onMouseEnterHandlerServices}>EMPRESA</Link>
+                                <Link to='/empresa' onMouseEnter={this.onMouseEnterHandlerEmpresa}>EMPRESA</Link>
                             </li>
                             <li>
-                                <Link to='/servicios' onMouseEnter={this.onMouseEnterHandlerNosotros}>SERVICIOS</Link>
+                                <Link to='/servicios' onMouseEnter={this.onMouseEnterHandlerServicios}>SERVICIOS</Link>
                             </li>
                             <li>
-                                <Link to='/clientes' onMouseEnter={this.onMouseEnterHandlerContacto}>CLIENTES</Link>
+                                <Link to='/clientes' onMouseEnter={this.onMouseEnterHandlerClientes}>CLIENTES</Link>
                             </li>
                             <li>
                                 <Link to='/contacto' onMouseEnter={this.onMouseEnterHandlerContacto}>CONTACTO</Link>
@@ -112,9 +138,10 @@ const MenuSubMenu=React.createClass({
                 <div className="rowdd">
                     <div className="row text-center" >
                         {this.state.show1 ? this.getOptionInicio() : null}
-                        {this.state.show2 ? this.getOptionServicios() : null}
-                        {this.state.show3 ? this.getOptionNosotros() : null}
-                        {this.state.show4 ? this.getOptionContacto() : null}
+                        {this.state.show2 ? this.getOptionEmpresa() : null}
+                        {this.state.show3 ? this.getOptionServicios() : null}
+                        {this.state.show4 ? this.getOptionClientes() : null}
+                        {this.state.show5 ? this.getOptionContacto() : null}
                     </div>
                 </div>
             </div>
